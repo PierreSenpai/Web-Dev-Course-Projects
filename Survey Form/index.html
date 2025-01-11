@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Camp Green Lake Survey Form</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h1 id="title">Camp Green Lake Survey Form</h1>
+	<p id="description">Thank you for taking the time to improve our camp!</p>
+
+	<form id="survey-form">
+		<label  for="name" 
+						id="name-label">
+			Name
+		</label>
+		<input  type="text" 
+						required 
+						id="name" 
+						placeholder="Enter your name">
+		
+		<label  for="email" 
+						id="email-label">
+			Email
+		</label>
+		<input  type="email" 
+						required 
+						id="email"
+						placeholder="Enter your email">
+		
+		<label  for="number" 
+						id="number-label">
+			Age <p class="additionalInfo">(optional)</p>
+		</label>
+		<input  type="number" 
+						id="number" 
+						min="1" 
+						max="120" 
+						placeholder="Enter your age">
+
+		<p>Which group were you assigned to?</p>
+		<select id="dropdown">
+			<option selected disabled>(Select one)</option>
+			<option>A</option>
+			<option>B</option>
+			<option>C</option>
+			<option>D</option>
+			<option>E</option>
+		</select>
+			
+		<p>How would you describe your stay at Camp Green Lake?</p>
+		<label class="small"><input class="inline" type="radio" name="description" value="awesome" checked> Awesome</label>
+		<label class="small"><input class="inline" type="radio" name="description" value="ok"> OK</label>
+		<label class="small"><input class="inline" type="radio" name="description" value="not bad"> Not Bad</label>
+		<label class="small"><input class="inline" type="radio" name="description" value="horrible"> Horrible</label>
+		<label class="small"><input class="inline" type="radio" name="description" value="other"> Other</label>
+
+		<p class="inline">Which things should be changed/improved?</p> <p class="additionalInfo">(Check all that apply)</p>
+		<label class="small"><input class="inline" type="checkbox" value="food"> Food</label>
+		<label class="small"><input class="inline" type="checkbox" value="water supply"> Water Supply</label>
+		<label class="small"><input class="inline" type="checkbox" value="sanitary facilities"> Sanitary Facilities</label>
+		<label class="small"><input class="inline" type="checkbox" value="bed"> Bed</label>
+		<label class="small"><input class="inline" type="checkbox" value="clothes"> Clothes</label>
+		<label class="small"><input class="inline" type="checkbox" value="post-work activities"> Post-work Activities</label>
+		<label class="small"><input class="inline" type="checkbox" value="counselors"> Counselors</label>
+
+		<label for="feedback">Feedback or anything to add?</label>
+		<textarea id="feedback" rows="5"></textarea>
+
+		<input id="submit" type="submit" value="SUBMIT">
+	</form>
+</body>
+</html>

@@ -1,0 +1,98 @@
+#title {
+    font-size: 3em;
+    text-align: center;
+}
+
+#description {
+    font-size: 1em;
+    font-style: italic;
+    text-align: center;
+    margin-top: -20px;
+}
+
+form {
+    background-color: rgba(66, 51, 35, 0.9);
+    padding: 10px 40px;
+    max-width: 1000px;
+    min-width: 600px;
+    width: 75vw;
+    margin: 1em auto 2em;
+    border-radius: 0.5em;
+    font-size: 1.5rem;
+}
+body {
+    background-image: linear-gradient(rgba(201, 107, 6, 0.4), rgba(148, 88, 24, 0.5)), url("../images/background.png");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: Arial;
+    margin: none;
+}
+input, textarea, label, select {
+    display: block;
+    min-height: 2rem;
+    margin: 0;
+}
+
+form p, label {
+    margin: 1em 0 0.1em;
+}
+
+form p {
+    margin-top: 2em;
+}
+
+input, select, textarea {
+    border: 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 0.5em;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+select {
+    margin-top: 0.5em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    vertical-align: -55%;
+    width: unset;
+    margin-right: 0.25em
+}
+
+textarea {
+    margin: 0.5em 0 2em;
+    font-family: inherit;
+}
+
+#submit {
+    margin: 0 auto 20px;
+    width: 7rem;
+    border: none;
+    background-color: #f28907;
+    font-size: 1.2rem;
+}
+
+#submit:hover, #submit:focus {
+    background-color: #eba54f;
+}
+
+#submit:active {
+    background-color: #dab587;
+}
+
+.small {
+    font-size: 1rem;
+    margin: 0.5em 0;
+}
+
+.additionalInfo {
+    display: inline;
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.inline {
+    display: inline-block;
+}
